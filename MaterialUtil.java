@@ -1,12 +1,10 @@
-package realcraft.bukkit.utils;
-
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
 import org.bukkit.entity.EntityType;
 
 public class MaterialUtil {
 
-	public static DyeColor getMaterialColor(Material type){
+	public static DyeColor getDyeColor(Material type){
 		for(DyeColor color : DyeColor.values()){
 			if(type.toString().startsWith(color.toString())) return color;
 		}
