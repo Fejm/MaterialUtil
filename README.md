@@ -56,7 +56,7 @@ boolean isWood(Material type)
 @EventHandler
 public void onPlayerInteract(PlayerInteractEvent event){
 	if(event.hasItem() && MaterialUtil.isWool(event.getItem().getType())){
-		DyeColor woolColor = MaterialUtil.getMaterialColor(event.getItem().getType());
+		DyeColor woolColor = MaterialUtil.getDyeColor(event.getItem().getType());
 		// code ...
 	}
 }
