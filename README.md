@@ -1,1 +1,1 @@
-# MaterialUtil-Bukkit-1.13-
+# MaterialUtil (Bukkit 1.13+)
