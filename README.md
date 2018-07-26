@@ -66,7 +66,7 @@ public void onPlayerInteract(PlayerInteractEvent event){
 @EventHandler
 public void onPlayerInteract(PlayerInteractEvent event){
 	ItemStack redWool = new ItemStack(MaterialUtil.getWool(DyeColor.RED));
-	ItemStack cowEgg = new ItemStack(MaterialUtil.getSpawnEgg(EntityType.CHICKEN));
+	ItemStack cowEgg = new ItemStack(MaterialUtil.getSpawnEgg(EntityType.COW));
 	// code ...
 }
 ```
