@@ -1,5 +1,5 @@
-# MaterialUtil (Bukkit 1.13+)
-Utils library for new materials in Minecraft 1.13+
+# MaterialUtil (Bukkit 1.16+)
+Utils library for new materials in Minecraft 1.16+
 
 ### List of methods
 ```java
@@ -54,8 +54,10 @@ boolean isWood(Material type)
 
 ```java
 @EventHandler
-public void onPlayerInteract(PlayerInteractEvent event){
-	if(event.hasItem() && MaterialUtil.isWool(event.getItem().getType())){
+public void onPlayerInteract(PlayerInteractEvent event)
+{
+	if(event.hasItem() && MaterialUtil.isWool(event.getItem().getType()))
+	{
 		DyeColor woolColor = MaterialUtil.getDyeColor(event.getItem().getType());
 		// code ...
 	}
@@ -64,7 +66,8 @@ public void onPlayerInteract(PlayerInteractEvent event){
 
 ```java
 @EventHandler
-public void onPlayerInteract(PlayerInteractEvent event){
+public void onPlayerInteract(PlayerInteractEvent event)
+{
 	ItemStack redWool = new ItemStack(MaterialUtil.getWool(DyeColor.RED));
 	ItemStack cowEgg = new ItemStack(MaterialUtil.getSpawnEgg(EntityType.COW));
 	// code ...
@@ -73,8 +76,10 @@ public void onPlayerInteract(PlayerInteractEvent event){
 
 ```java
 @EventHandler
-public void onPlayerInteract(PlayerInteractEvent event){
-	if(event.hasItem() && MaterialUtil.isSpawnEgg(event.getItem().getType())){
+public void onPlayerInteract(PlayerInteractEvent event)
+{
+	if(event.hasItem() && MaterialUtil.isSpawnEgg(event.getItem().getType()))
+	{
 		EntityType entityType = MaterialUtil.getSpawnEggType(event.getItem().getType());
 		// code ...
 	}
